@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "pinkbike-deals"
+version = "0.3.0"
+description = "Used mountain bike deal finder — scrapes Pinkbike BuySell and scores deals"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+    "httpx[http2]>=0.27.0",
+    "cloudscraper>=1.2.71",
+    "sqlalchemy>=2.0.25",
+    "thefuzz>=0.22.0",
+    "python-Levenshtein>=0.25.0",
+    "PyQt6>=6.6.0",
+]
+
+[project.scripts]
+pinkbike-deals = "src.main:main"
+pinkbike-gui   = "src.gui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

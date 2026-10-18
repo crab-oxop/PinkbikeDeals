@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E85D04"/>
+      <stop offset="100%" style="stop-color:#D14800"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="8" y="8" width="240" height="240" rx="48" ry="48" fill="url(#bg)"/>
+  <!-- Mountain bike wheel (rear) -->
+  <circle cx="100" cy="155" r="42" fill="none" stroke="#fff" stroke-width="6"/>
+  <circle cx="100" cy="155" r="6" fill="#fff"/>
+  <!-- Mountain bike wheel (front) -->
+  <circle cx="190" cy="155" r="42" fill="none" stroke="#fff" stroke-width="6"/>
+  <circle cx="190" cy="155" r="6" fill="#fff"/>
+  <!-- Frame -->
+  <polyline points="100,155 135,100 190,155" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="135" y1="100" x2="170" y2="100" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <line x1="170" y1="100" x2="190" y2="155" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="100" y1="155" x2="145" y2="155" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="145" y1="155" x2="170" y2="100" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Handlebars -->
+  <line x1="170" y1="100" x2="178" y2="82" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <!-- Seat -->
+  <line x1="135" y1="100" x2="128" y2="85" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="120" y1="85" x2="136" y2="85" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <!-- Deal tag / dollar sign -->
+  <circle cx="62" cy="62" r="28" fill="#fff"/>
+  <text x="62" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="#E85D04">$</text>
+</svg>
